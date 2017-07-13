@@ -1,0 +1,55 @@
+nodes
+0	federal student loans	1018-7.txt;3797;3957|1018-19.txt;2081;2228|1018-3.txt;7771;7879|1018-3.txt;8799;8945|1018-26.txt;971;1198
+1	Credit union lenders	1018-1.txt;1560;1675
+2	FICO score in combination with other factors	1018-5.txt;5459;5616|1018-5.txt;2308;2440|1018-5.txt;5459;5616|1018-5.txt;1521;1593|1018-5.txt;2308;2440
+3	low interest, long-term loans	1018-19.txt;1787;1968
+4	cost of their college education	1018-36.txt;499;663|1018-0.txt;434;598|1018-7.txt;3797;3957
+5	a steady income	1018-9.txt;1259;1399
+6	credit check	1018-3.txt;8799;8945
+7	interest rate	1018-5.txt;5459;5616
+8	sufficient credit history	1018-9.txt;1259;1399|1018-9.txt;6912;7012
+9	students with bad credit history	1018-3.txt;7771;7879|1018-3.txt;7771;7879|1018-3.txt;7419;7502
+10	private student loans	1018-5.txt;2308;2440|1018-1.txt;894;949
+11	hope	1018-3.txt;7771;7879
+12	education loan funds	1018-19.txt;1787;1968|1018-19.txt;2081;2228
+13	Federal Direct Loan program	1018-39.txt;1734;1840
+14	time between graduation and start of employment	1018-32.txt;7663;7884
+15	Stafford, Perkins and PLUS loans	1018-5.txt;1521;1593
+16	U.S. Department of Schooling	1018-7.txt;3994;4190
+17	fees	1018-5.txt;5459;5616
+18	big lender loans	1018-1.txt;894;949
+19	monthly payments	1018-14.txt;3708;3806
+20	a credit-worthy co-signer	1018-20.txt;353;472
+21	Private lending institutions	1018-5.txt;2308;2440|1018-13.txt;1517;1671|1018-9.txt;1259;1399|1018-9.txt;1259;1399
+22	all available loan options	1018-32.txt;91;255
+23	students	1018-26.txt;971;1198|1018-20.txt;353;472|1018-9.txt;6912;7012|1018-0.txt;975;1100|1018-32.txt;7663;7884|1018-39.txt;1734;1840|1018-36.txt;499;663|1018-14.txt;3708;3806|1018-32.txt;91;255
+24	student loans	1018-7.txt;3994;4190|1018-0.txt;434;598|1018-0.txt;975;1100|1018-1.txt;1560;1675|1018-3.txt;7419;7502|1018-13.txt;1517;1671
+edges
+9	0	apply for	1018-3.txt;7771;7879
+0	23	provide a significant financial aid to	1018-26.txt;971;1198
+0	12	are the most common source of	1018-19.txt;2081;2228
+0	6	not requiring	1018-3.txt;8799;8945
+23	13	can choose to borrow additional student loan funds to supplement	1018-39.txt;1734;1840
+23	8	does not have	1018-9.txt;6912;7012
+23	20	will need to apply with	1018-20.txt;353;472
+9	11	should not lose	1018-3.txt;7771;7879
+23	19	must ensure he can keep up with	1018-14.txt;3708;3806
+21	24	regularly offer	1018-13.txt;1517;1671
+1	24	team up with employers and state governments to offer	1018-1.txt;1560;1675
+2	10	determine eligibility for	1018-5.txt;2308;2440
+24	9	offered to	1018-3.txt;7419;7502
+24	4	help students cover	1018-0.txt;434;598
+2	7	can potentially reduce	1018-5.txt;5459;5616
+2	17	can potentially reduce	1018-5.txt;5459;5616
+23	22	should explore	1018-32.txt;91;255
+24	23	are offered to	1018-0.txt;975;1100
+21	2	generally use	1018-5.txt;2308;2440
+10	18	means	1018-1.txt;894;949
+21	8	require a borrower to have	1018-9.txt;1259;1399
+21	5	require a borrower to have	1018-9.txt;1259;1399
+15	2	do not depend on	1018-5.txt;1521;1593
+23	14	may experience financial difficulties during	1018-32.txt;7663;7884
+0	4	to meet	1018-7.txt;3797;3957
+23	4	pay for	1018-36.txt;499;663
+3	12	are designed to provide student with	1018-19.txt;1787;1968
+24	16	offered by	1018-7.txt;3994;4190

@@ -1,0 +1,10 @@
+nodes
+1000	Alex	a.txt;1;2
+1001	Arwed	b.txt;3;4
+1002	Ramy	b.txt;5;6|a.txt;9;10
+1003	Basti	a.txt;7;8
+edges
+1000	1001	is related to	
+1001	1002	is related to	
+1002	1003	is related to	
+1000	1002	is related to	

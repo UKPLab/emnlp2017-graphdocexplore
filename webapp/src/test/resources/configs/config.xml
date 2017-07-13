@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://informatik.tu-darmstadt.de/bp/gruppe31"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://informatik.tu-darmstadt.de/bp/gruppe31 configSchema.xsd">
+	
+	<graph>
+		<generator className="de.tudarmstadt.ukp.navgraphs.StaticNEGraphGenerator" />
+	</graph>
+	<search>
+		<server-url url="http://localhost:8983/solr/documents" />
+		<searcher className="de.tudarmstadt.ukp.exploration.graph_doc_explorer.webapp.application.search.SolrSearch"/>
+	</search>
+	<logging>
+		<logger className="de.tudarmstadt.ukp.exploration.graph_doc_explorer.webapp.application.logging.Log4jLogger"/>
+	</logging>
+	<data-folder value="C:\Users\falke\EclipseWorkspace\graph-doc-explorer\webapp\src\main\resources\data"/>
+</config>

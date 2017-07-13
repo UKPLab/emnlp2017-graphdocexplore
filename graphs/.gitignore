@@ -1,0 +1,17 @@
+/data/
+/bin/
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+
+.settings/
+.externalToolBuilders/
+*.launch
+.project
+.classpath

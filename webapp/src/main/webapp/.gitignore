@@ -1,0 +1,4 @@
+# bower files
+vendor/*
+!vendor
+!vendor/index.html

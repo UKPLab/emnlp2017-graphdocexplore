@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>de.tudarmstadt.ukp.exploration</groupId>
+    <artifactId>graph-doc-explorer</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>graph-doc-explorer.graphs-ne-impl</artifactId>
+	<name>implementation of graph interface for entities</name>
+	<packaging>jar</packaging>	
+  
+  <dependencies>
+	    <dependency>
+			<groupId>de.tudarmstadt.ukp.exploration</groupId>
+			<artifactId>graph-doc-explorer.graphs</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+  	<dependency>
+  		<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
+  		<artifactId>
+  			de.tudarmstadt.ukp.dkpro.core.stanfordnlp-gpl
+  		</artifactId>
+  		<version>1.8.0</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
+  		<artifactId>
+  			de.tudarmstadt.ukp.dkpro.core.io.bincas-asl
+  		</artifactId>
+  		<version>1.8.0</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
+  		<artifactId>
+  			de.tudarmstadt.ukp.dkpro.core.io.text-asl
+  		</artifactId>
+  		<version>1.8.0</version>
+  	</dependency>
+  </dependencies>
+</project>

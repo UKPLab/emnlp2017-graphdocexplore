@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collections xmlns="http://informatik.tu-darmstadt.de/bp/gruppe31"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<!-- the name should be the same name that was used when indexing the document collection in SOLR -->
+		<collection name="studentloans-cmap" folder="/data/student_loans_cmap/" 
+			generatorClassName="de.tudarmstadt.ukp.exploration.graph_doc_explorer.webapp.application.graph.FileGraphGenerator" />
+		<collection name="studentloans-orgs" folder="/data/student_loans_orgs/" 
+			generatorClassName="de.tudarmstadt.ukp.exploration.graph_doc_explorer.graphs_ne_impl.StaticEntityGraph" 
+			generatorParams="ORGANIZATION 5 500 1" />
+		<collection name="enron-orgs" folder="/data/enron_orgs/" 
+			generatorClassName="de.tudarmstadt.ukp.exploration.graph_doc_explorer.graphs_ne_impl.StaticEntityGraph" 
+			generatorParams="ORGANIZATION 99999 99999 3" />
+		<collection name="enron-persons" folder="/data/enron_persons/" 
+			generatorClassName="de.tudarmstadt.ukp.exploration.graph_doc_explorer.graphs_ne_impl.DynamicEntityGraph" 
+			generatorParams="PERSON 99999 100 3 15" />
+</collections>

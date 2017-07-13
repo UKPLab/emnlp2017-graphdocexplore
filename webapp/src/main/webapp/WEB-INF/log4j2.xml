@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="trace">
+	<CustomLevels>
+		<CustomLevel name="USER_ACTION" intLevel="50" />
+	</CustomLevels>
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{DEFAULT} [%-5level] %c{2} : %msg%n" />
+		</Console>
+		<File name="ErrorFile" fileName="/var/log/tomcat7/graph-doc-explorer/errors.log" append="true">
+			<PatternLayout pattern="%d{DEFAULT} [%-5level] %c{2} : %msg%n" />
+			<Filters>
+				<ThresholdFilter level="USER_ACTION" onMatch="DENY"
+					onMismatch="NEUTRAL" />
+			</Filters>
+		</File>
+		<File name="SystemFile" fileName="/var/log/tomcat7/graph-doc-explorer/system.log" append="true">
+			<PatternLayout pattern="%d{DEFAULT} [%-5level] %c{2} : %msg%n" />
+		</File>
+		<File name="UserActionsFile" fileName="/var/log/tomcat7/graph-doc-explorer/users.log" append="true">
+			<PatternLayout pattern="%d{DEFAULT} [%-5level] %c{2} : %msg%n" />
+		</File>
+	</Appenders>
+	<Loggers>
+		<Logger name="de.tudarmstadt.ukp.exploration.graph_doc_explorer.webapp.application.logging.Log4jLogger"
+			additivity="false">
+			<AppenderRef ref="UserActionsFile" level="user_action" />
+			<AppenderRef ref="SystemFile" level="info" />
+			<AppenderRef ref="ErrorFile" level="error" />
+			<AppenderRef ref="Console" />
+		</Logger>
+		<Root level="trace">
+			<AppenderRef ref="Console" />
+		</Root>
+	</Loggers>
+</Configuration>

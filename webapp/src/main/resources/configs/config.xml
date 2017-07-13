@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://informatik.tu-darmstadt.de/bp/gruppe31"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://informatik.tu-darmstadt.de/bp/gruppe31 configSchema.xsd">
+	
+	<graph>		
+		<!--
+			The webapp currently supports two graph layouts, which should be specified here.
+			If you want to add more graph layouts, you'll have to specify their file location and
+			names in 'webapp/views/index.jsp'. If you don't add the layout there, the application
+			won't recognize the layout.
+			
+			For example, if you want to add a graph layout called 'MyGraphLayout' which is stored in the
+			file 'MyGraphLayout.js' in the javascript folder, you'll have to add these two lines:
+			
+			<spring:url value="/js/app/MyGraphLayout.js" var="MyGraphLayout" />
+			<script src="${MyGraphLayout}"></script> 
+			
+		-->
+		<layout serviceName="D3ForceGraphService" />		
+		<layout serviceName="D3NeighbourOnlyGraphService" />
+	</graph>
+	<search>
+		<server-url url="http://localhost:8983/solr/documents" />
+		<searcher className="de.tudarmstadt.ukp.exploration.graph_doc_explorer.webapp.application.search.SolrSearch"/>
+	</search>
+	<logging>
+		<logger className="de.tudarmstadt.ukp.exploration.graph_doc_explorer.webapp.application.logging.Log4jLogger"/>
+	</logging>
+	
+	<!-- important: do not change the order of the settings! -->
+	<settings>
+		<!-- Text snippet description length (default value used in SettingsService in services.js: 250) -->
+		<setting descriptionLength="250"/>
+		
+		<!-- Graph update check interval in ms (default value used in SettingsService in services.js: 60000) -->
+		<setting checkInterval="20000"/>
+		
+	</settings>
+</config>

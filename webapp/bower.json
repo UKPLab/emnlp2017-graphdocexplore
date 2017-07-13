@@ -1,0 +1,31 @@
+{
+    "name": "graph-doc-explorer",
+    "version": "1.0.0",
+    "authors": [
+        "Ramy Hcini <ramy.hcini@stud.hrz.tu-darmstadt.de>"
+    ],
+    "description": "Graph-based Document Exploration",
+    "keywords": [
+        "search",
+        "documents"
+    ],
+    "license": "Apache 2.0",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "src/main/webapp/vendor",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "angular": "1.5.x",
+        "d3": "3.x",
+        "bootstrap": "3.3.x",
+    	"angular-route": "1.5.x",
+    	"angular-sanitize": "1.5.x",
+    	"angular-cookies": "1.5.x"
+   	},
+    "main": "src/main/webapp/views/index.jsp"
+}
