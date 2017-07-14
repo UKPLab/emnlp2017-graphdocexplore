@@ -1,9 +1,6 @@
 {
     "name": "graph-doc-explorer",
     "version": "1.0.0",
-    "authors": [
-        "Ramy Hcini <ramy.hcini@stud.hrz.tu-darmstadt.de>"
-    ],
     "description": "Graph-based Document Exploration",
     "keywords": [
         "search",
