@@ -27,7 +27,7 @@ Please follow these steps to setup the system with the default configuration and
     * Name: path, Type: string, Properties: indexed, required, stored
 1. Index all documents of the demo collections with solr. Example:
     * `document-indexer config.xml data/enron_orgs enron-orgs`
-   Please make sure that the collections name defined during indexing (last parameter) match those used in the `collections.xml` configuration file. For more infos in indexing, please refer to `indexer/README`.
+   Please make sure that the collections name defined during indexing (last parameter) match those used in the `collections.xml` configuration file. For more infos on indexing, please refer to `indexer/README`.
 1. Deploy the war file created during the build process to Tomcat.
 1. Open the application in your Browser (preferably Chrome).
 

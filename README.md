@@ -44,6 +44,7 @@ It is a Java Maven project with several modules:
 * `webapp` backend and frontend code of web application
 * `indexer` simple command-line application to index documents in Solr
 * `graphs-ne-impl` example implementation of a graph extraction module, creating entity co-occurence graphs with Stanford NER
+
 For more details, please refer to the respective modules README file. 
 
 To build the full project, run Maven for the parent POM (this folder), which should compile, test and package all modules. The war created in the webapp module can then be deployed on a webserver (e.g. Tomcat).
