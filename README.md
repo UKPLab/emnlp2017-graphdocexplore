@@ -6,8 +6,6 @@ This repository contains the GraphDocExplore framework. GraphDocExplore provides
 * an example implementations of this interface that creates entity graphs
 * extensive logging capabilities to support user studies
 
-You can access a demo of the user interface [here](http://cmaps.ukp.informatik.tu-darmstadt.de/graph-doc-explorer/#!/).
-
 For more details on the features of this framework, please refer to our [publication at EMNLP 2017](https://www.ukp.tu-darmstadt.de/publications/?no_cache=1&tx_dppublications_pi1%5Bpublication%5D=10518&tx_dppublications_pi1%5Baction%5D=show&tx_dppublications_pi1%5Bcontroller%5D=Publication&cHash=31cb6bc7dfbe23b24d6eaa4043be39d0#dp_publications-single).
 
 Please use the following citation if you make use of the framework in your own work:
